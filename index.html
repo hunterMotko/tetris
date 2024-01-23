@@ -1,0 +1,40 @@
+
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="grid">
+        <canvas id="game-canvas" class="game-board" width="300" height="600"></canvas>
+        <div class="center-column">
+          <div>
+            <img id="logo" src="assets/tetris_logo.png" alt="Tetris Logo">
+            <p>Score: <span id="score"></span></p>
+            <p>Lines: <span id="lines"></span></p>
+            <p>Level: <span id="level"></span></p>
+            <p>Next Piece:</p>
+            <canvas id="next" class="next"></canvas>
+            <p>Hold: </p>
+            <canvas id="hold" class="hold"></canvas>
+            <button id="play-btn" class="button">Play</button>
+            <button id="pause-btn" class="button">Pause</button>
+          </div>
+        </div>
+        <div class="right-column">
+            
+        </div>
+      </div>
+      <script src="helpers/constants.js"></script>
+      <script src="helpers/queue.js"></script>
+      <script src="helpers/piece.js"></script>
+      <script src="helpers/gameBoard.js"></script>
+      <script src="./my_tetris.js"></script>
+    </body>
+</html>
